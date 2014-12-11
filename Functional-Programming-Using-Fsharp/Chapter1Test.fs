@@ -17,5 +17,11 @@ type Chapter1() =
     [<TestMethod>]
     member this.``1.4``() =
         Assert.AreEqual(15, f 5 )
+    [<TestMethod>]
+    member this.``1.5``() =
+        Assert.AreEqual(3, F 4 )
+    [<TestMethod>]
+    member this.``1.6``() =
+        Assert.AreEqual(22, sum(4,3) )
 
 
