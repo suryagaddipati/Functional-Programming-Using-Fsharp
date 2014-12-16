@@ -43,8 +43,10 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chapter1.fs" />
+    <Compile Include="Chapter2.fs" />
+    <Compile Include="Chapter2Test.fs" />
     <None Include="Script.fsx" />
+    <Compile Include="Chapter1.fs" />
     <Compile Include="Chapter1Test.fs" />
   </ItemGroup>
   <PropertyGroup>
