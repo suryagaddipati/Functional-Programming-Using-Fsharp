@@ -10,3 +10,6 @@ type Chapter2() =
         Assert.IsTrue(f(27))
         Assert.IsFalse(f(29))
         Assert.IsFalse(f(30))
+    [<TestMethod>]
+    member this.``2.2``() =
+        Assert.AreEqual("sssss",pow("s",5))
