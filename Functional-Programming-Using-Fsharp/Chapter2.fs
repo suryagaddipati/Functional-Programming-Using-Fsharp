@@ -11,4 +11,13 @@ module Chapter2 =
 
  let isIthChar (str: string, i, ch) = str.[i] = ch
 
+ let occFromIth(str: string,i,ch)= 
+  let rec occFromIth1(i,count)= 
+            match i with
+            | _ when i>=str.Length -> count
+            | _ when isIthChar(str,i,ch) -> occFromIth1(i+1,count+1)
+            | _ -> occFromIth1(i+1,count)
+  occFromIth1(i,0)
+           
+
                 
