@@ -13,3 +13,7 @@ type Chapter2() =
     [<TestMethod>]
     member this.``2.2``() =
         Assert.AreEqual("sssss",pow("s",5))
+    [<TestMethod>]
+    member this.``2.3``() =
+        Assert.IsTrue(isIthChar("meow",2,'o'))
+        Assert.IsFalse(isIthChar("meow",3,'o'))
