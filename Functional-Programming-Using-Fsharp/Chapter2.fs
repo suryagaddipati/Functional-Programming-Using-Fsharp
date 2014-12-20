@@ -16,3 +16,5 @@ module Chapter2 =
          | _ -> occFromIth(str,i+1,ch)
                 
  let occInString(str,ch)= occFromIth(str,0,ch)
+ let notDivisible(d,n)= n%d <>0
+ 

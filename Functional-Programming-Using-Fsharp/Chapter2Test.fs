@@ -25,3 +25,7 @@ type Chapter2() =
     [<TestMethod>]
     member this.``2.5``() =
         Assert.AreEqual(3,occInString("meoowo",'o'))
+    [<TestMethod>]
+    member this.``2.6``() =
+        Assert.IsTrue(notDivisible(2,5))
+        Assert.IsFalse(notDivisible(3,9))
