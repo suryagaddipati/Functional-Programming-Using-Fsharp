@@ -29,3 +29,7 @@ type Chapter2() =
     member this.``2.6``() =
         Assert.IsTrue(notDivisible(2,5))
         Assert.IsFalse(notDivisible(3,9))
+    [<TestMethod>]
+    member this.``2.7.1``() =
+        Assert.IsTrue(test(2,4,5))
+        Assert.IsFalse(test(1,3,9))
