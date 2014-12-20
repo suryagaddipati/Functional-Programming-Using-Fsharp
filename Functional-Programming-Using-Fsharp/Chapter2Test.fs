@@ -22,3 +22,6 @@ type Chapter2() =
         Assert.AreEqual(3,occFromIth("meoowo",2,'o'))
         Assert.AreEqual(1,occFromIth("meoowo",5,'o'))
         Assert.AreEqual(0,occFromIth("meoowo",7,'o'))
+    [<TestMethod>]
+    member this.``2.5``() =
+        Assert.AreEqual(3,occInString("meoowo",'o'))

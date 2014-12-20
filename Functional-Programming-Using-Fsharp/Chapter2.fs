@@ -15,3 +15,4 @@ module Chapter2 =
          | _ when isIthChar(str,i,ch) -> 1 + occFromIth(str,i+1,ch)
          | _ -> occFromIth(str,i+1,ch)
                 
+ let occInString(str,ch)= occFromIth(str,0,ch)
